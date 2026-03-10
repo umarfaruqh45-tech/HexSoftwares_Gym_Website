@@ -3,81 +3,179 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>MAX Gym</title>
 
-<link rel="stylesheet" href="style.css">
-
 <style>
+
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#111;
-    color:white;
+margin:0;
+font-family:Arial;
+background:#111;
+color:white;
 }
 
+/* Header */
+
 header{
-    background:black;
-    padding:20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+background:black;
+display:flex;
+justify-content:space-between;
+padding:20px;
+align-items:center;
 }
 
 nav a{
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
 }
 
 nav a:hover{
-    color:red;
+color:red;
 }
 
+/* Hero Section */
+
 .hero{
-    text-align:center;
-    padding:120px 20px;
-    background:url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') center/cover;
+height:90vh;
+background:url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
 .hero h1{
-    font-size:50px;
+font-size:55px;
 }
 
 .hero p{
-    font-size:20px;
+font-size:20px;
 }
 
 .btn{
-    padding:12px 25px;
-    background:red;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
+background:red;
+padding:12px 30px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+margin-top:10px;
 }
+
+/* Sections */
 
 .section{
-    padding:60px 20px;
-    text-align:center;
+padding:60px 20px;
+text-align:center;
 }
 
+/* Services */
+
+.services{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.service{
+background:#222;
+padding:20px;
+width:220px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.service:hover{
+transform:scale(1.05);
+}
+
+/* Trainers */
+
+.trainers{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.trainer{
+background:#222;
+padding:20px;
+width:220px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.trainer img{
+width:100%;
+border-radius:10px;
+}
+
+.trainer:hover{
+transform:scale(1.05);
+}
+
+/* Plans */
+
 .plans{
-    display:flex;
-    justify-content:center;
-    gap:20px;
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
 }
 
 .card{
-    border:1px solid white;
-    padding:20px;
-    width:200px;
+background:#222;
+padding:25px;
+width:220px;
+border-radius:10px;
+transition:0.3s;
 }
 
-footer{
-    background:black;
-    text-align:center;
-    padding:20px;
+.card:hover{
+transform:scale(1.05);
 }
+
+/* Contact */
+
+.contact input,
+.contact textarea{
+width:80%;
+padding:10px;
+margin:10px;
+border:none;
+border-radius:5px;
+}
+
+/* Footer */
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+}
+
+/* Simple Animation */
+
+.fade{
+animation:fadeIn 2s;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
 </style>
 
 </head>
@@ -85,6 +183,7 @@ footer{
 <body>
 
 <header>
+
 <h2>MAX GYM</h2>
 
 <nav>
@@ -94,27 +193,94 @@ footer{
 <a href="#">Plans</a>
 <a href="#">Contact</a>
 </nav>
+
 </header>
 
-<section class="hero">
-<h1>Welcome to MAX Gym</h1>
+<section class="hero fade">
+
+<h1>Transform Your Body</h1>
+
 <p>Train Hard. Stay Strong. Be Fit.</p>
+
 <a href="#" class="btn">Join Now</a>
+
 </section>
 
-<section class="section">
+<section class="section fade">
+
 <h2>About Our Gym</h2>
-<p>MAX Gym helps people stay strong, healthy, and confident with modern equipment and expert trainers.</p>
+
+<p>MAX Gym provides modern equipment, expert trainers, and the best fitness environment to achieve your goals.</p>
+
 </section>
 
-<section class="section">
+<section class="section fade">
+
 <h2>Our Services</h2>
-<p>Weight Training</p>
-<p>Cardio Training</p>
-<p>Personal Coaching</p>
+
+<div class="services">
+
+<div class="service">
+<h3>Weight Training</h3>
+<p>Build strength using modern equipment.</p>
+</div>
+
+<div class="service">
+<h3>Cardio Training</h3>
+<p>Improve stamina and endurance.</p>
+</div>
+
+<div class="service">
+<h3>Personal Coaching</h3>
+<p>Work with expert fitness trainers.</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
+<section class="section fade">
+
+<h2>Our Trainers</h2>
+
+<div class="trainers">
+
+<div class="trainer">
+
+<img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1">
+
+<h3>John</h3>
+
+<p>Strength Trainer</p>
+
+</div>
+
+<div class="trainer">
+
+<img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba">
+
+<h3>Sarah</h3>
+
+<p>Fitness Coach</p>
+
+</div>
+
+<div class="trainer">
+
+<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+
+<h3>Mike</h3>
+
+<p>Cardio Expert</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section fade">
+
 <h2>Membership Plans</h2>
 
 <div class="plans">
@@ -122,28 +288,43 @@ footer{
 <div class="card">
 <h3>Basic</h3>
 <p>$10 / month</p>
+<p>Access to gym equipment</p>
 </div>
 
 <div class="card">
 <h3>Standard</h3>
 <p>$25 / month</p>
+<p>Gym + Cardio Classes</p>
 </div>
 
 <div class="card">
 <h3>Premium</h3>
 <p>$40 / month</p>
+<p>All services + personal trainer</p>
 </div>
 
 </div>
+
 </section>
 
-<section class="section">
-<h2>Our Facilities</h2>
-<p>Modern gym equipment, professional trainers, and the best fitness environment.</p>
+<section class="section contact fade">
+
+<h2>Contact Us</h2>
+
+<input type="text" placeholder="Your Name"><br>
+
+<input type="email" placeholder="Your Email"><br>
+
+<textarea placeholder="Your Message"></textarea><br>
+
+<a class="btn">Send Message</a>
+
 </section>
 
 <footer>
+
 <p>© 2026 MAX Gym. All Rights Reserved.</p>
+
 </footer>
 
 </body>
