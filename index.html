@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIT Gym</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIT Gym</title>
+
 <link rel="stylesheet" href="style.css">
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, sans-serif;
-            background:#111;
-            color:white;
-        }
 
-        header{
-            background:black;
-            padding:20px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#111;
+    color:white;
+}
 
-        nav a{
-            color:white;
-            margin:0 15px;
-            text-decoration:none;
-            font-weight:bold;
-        }
+header{
+    background:black;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-        nav a:hover{
-            color:red;
-        }
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
 
-        .hero{
-            text-align:center;
-            padding:120px 20px;
-            background:url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') center/cover;
-        }
+nav a:hover{
+    color:red;
+}
 
-        .hero h1{
-            font-size:50px;
-        }
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') center/cover;
+}
 
-        .hero p{
-            font-size:20px;
-        }
+.hero h1{
+    font-size:50px;
+}
 
-        .btn{
-            padding:12px 25px;
-            background:red;
-            color:white;
-            text-decoration:none;
-            border-radius:5px;
-        }
+.hero p{
+    font-size:20px;
+}
 
-        .section{
-            padding:60px 20px;
-            text-align:center;
-        }
+.btn{
+    padding:12px 25px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
 
-        footer{
-            background:black;
-            text-align:center;
-            padding:20px;
-        }
-    </style>
-    <section class="section">
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.plans{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    border:1px solid white;
+    padding:20px;
+    width:200px;
+}
+
+footer{
+    background:black;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>FIT GYM</h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Plans</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Welcome to FIT Gym</h1>
+<p>Train Hard. Stay Strong. Be Fit.</p>
+<a href="#" class="btn">Join Now</a>
+</section>
+
+<section class="section">
 <h2>About Our Gym</h2>
 <p>FIT Gym helps people stay strong, healthy, and confident with modern equipment and expert trainers.</p>
 </section>
-    <section class="section">
+
+<section class="section">
 <h2>Our Services</h2>
 <p>Weight Training</p>
 <p>Cardio Training</p>
 <p>Personal Coaching</p>
 </section>
-    <section class="section">
+
+<section class="section">
 <h2>Membership Plans</h2>
 
 <div class="plans">
@@ -96,46 +135,15 @@
 </div>
 
 </div>
-
 </section>
-</head>
-
-<body>
-
-<header>
-    <h2>FIT GYM</h2>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Plans</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
-
-
-<section class="hero">
-    <h1>Welcome to FIT Gym</h1>
-    <p>Train Hard. Stay Strong. Be Fit.</p>
-    <a href="#" class="btn">Join Now</a>
-</section>
-
 
 <section class="section">
-    <h2>Our Facilities</h2>
-    <p>Modern gym equipment, professional trainers, and the best fitness environment.</p>
+<h2>Our Facilities</h2>
+<p>Modern gym equipment, professional trainers, and the best fitness environment.</p>
 </section>
-
-
-<section class="section">
-    <h2>Membership Plans</h2>
-    <p>Affordable monthly and yearly plans for everyone.</p>
-</section>
-
 
 <footer>
-    <p>© 2026 FIT Gym. All Rights Reserved.</p>
+<p>© 2026 FIT Gym. All Rights Reserved.</p>
 </footer>
 
 </body>
