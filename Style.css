@@ -1,1 +1,35 @@
+body{
+    margin:0;
+    font-family: Arial;
+}
 
+header{
+    background:black;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+
+.section{
+    padding:60px;
+    text-align:center;
+}
+
+.plans{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    border:1px solid #ddd;
+    padding:20px;
+    width:200px;
+}
